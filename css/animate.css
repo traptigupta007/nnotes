@@ -1,0 +1,63 @@
+/*** effect 3d image change ***/
+
+.imagechange-3d-inner {position:absolute;top:0px;right:0px;bottom:0px;left:0px}
+
+.imagechange-3d .imgchange-1 {opacity:1}
+.imagechange-3d:hover .imgchange-1 {opacity:0}
+.imagechange-3d .imgchange-2 {opacity:0}
+.imagechange-3d:hover .imgchange-2 {opacity:1}
+
+.imgchange-1 {position:absolute;top:0px;right:0px;bottom:0px;left:0px}
+.imgchange-2 {position:absolute;top:0px;right:0px;bottom:0px;left:0px;padding:20px;font-size:13px}
+
+.imgmain {border: 10px solid #000; width: 250px; height: 325px;}
+
+.imagechange-3d div 
+{
+transition:all 0.5s ease-in-out;
+-webkit-transition:all 0.5s ease-in-out;
+-moz-transition:all 0.5s ease-in-out;
+-ms-transition:all 0.5s ease-in-out;
+-o-transition:all 0.5s ease-in-out;
+}
+
+.imagechange-3d 
+{
+perspective:1000px;
+-webkit-perspective:1000px;
+-moz-perspective:1000px;
+-ms-perspective:1000px;
+-o-perspective:1000px;
+}
+
+.imagechange-3d-inner 
+{
+transform-style:preserve-3d;
+transition:all 1.0s linear;
+-webkit-transform-style:preserve-3d;
+-webkit-transition:all 1.0s linear;
+-moz-transform-style:preserve-3d;
+-moz-transition:all 1.0s linear;
+-ms-transform-style:preserve-3d;
+-ms-transition:all 1.0s linear;
+-o-transform-style:preserve-3d;
+-o-transition:all 1.0s linear;
+}
+
+.imagechange-3d:hover .imagechange-3d-inner 
+{
+transform:rotateY(180deg);
+-webkit-transform:rotateY(180deg);
+-moz-transform:rotateY(180deg);
+-ms-transform:rotateY(180deg);
+-o-transform:rotateY(180deg);
+}
+
+.imgchange-2 
+{
+transform:rotateY(180deg);
+-webkit-transform:rotateY(180deg);
+-moz-transform:rotateY(180deg);
+-ms-transform:rotateY(180deg);
+-o-transform:rotateY(180deg);
+}
