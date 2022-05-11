@@ -6,44 +6,36 @@
         <meta name="description" content="Description of your site goes here">
         <meta name="keywords" content="keyword1, keyword2, keyword3">
         <link href="css/style.css" rel="stylesheet" type="text/css">
-		<style>
-			input[type=text],
-			input[type=tel],
-			input[type=datetime-local],
-			textarea{
-				width: 90%;
-				padding: 8px;
-				margin: 5px;
-			}
-			input,
-			textarea{
-				border-top-left-radius: 10px;
-				border-top-right-radius: 10px;
-				border-bottom-left-radius: 10px;
-				border-bottom-right-radius: 10px;
-			}
-			input[type=submit] {
-				background: green;
-				border: none;
-				color: white;
-				width: 45%;
-				padding: 15px;
-				margin: 5px;
-			}
-			input[type=reset] {
-				background: red;
-				border: none;
-				color: white;
-				width: 45%;
-				padding: 15px;
-				margin: 5px;
-			}
-		</style>
-		
-		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-		<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-		<script src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.js"></script>
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!------ Include the above in your HEAD tag ---------->
+
+        <script async src="https://static.addtoany.com/menu/page.js">
+        </script>
+<style>
+				#aks:hover {
+					content: url('http://dummyimage.com/100x100/eb00eb/fff');
+				}
+				.imgmain {
+    border: 5px solid #000;
+    width: 250px;
+    height: 325px;
+    border-radius: 50%;
+    box-shadow: 2px 4px 7px 0px red;
+}
+			</style>
+
+        <script type="text/javascript">
+            var titleText = document.title;
+            function titleMarquee() {
+                titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
+                document.title = titleText;
+                setTimeout("titleMarquee()", 50);
+            }
+        </script>
     </head>
     <body>
         <div class="page-in">
@@ -78,7 +70,7 @@
                 <div class="main">
                     <div class="header">
                         <div class="header-top">
-                             <h1><marquee behavior="alternate">Welcome</marquee></h1>
+                            <h1><marquee behavior="alternate">Welcome</marquee></h1>
                         </div>
                         <div class="header-bottom">
                             <h2>Lorem Ipsum is simply dummy text<br>of the typesetting industry.</h2>
@@ -102,27 +94,28 @@
                     <div class="content">
                         <div class="content-left">
                             <div class="row1">
-                                <h1>FeedBack</h1>
-                                	<hr/>	
-                                	<div id="form">
+                                <h1 class="title"><img src="images/Welcome-08-june.gif" border="0" height="20" width="124">
+                                	<hr>	
+                                	Welcome To <span>Information Technology</span></h1>
 									
-									<form id="form_register" action="" method="post" autocomplete="on"> 
-									  <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
-									  <br>
-									  <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
-									  <br>
-									  <input type="tel" id="mobile" name="mobile" placeholder="Mobile Number" required>
-									  <br>
-									  <input type="datetime-local" name="mylocaldatetime">
-									  <br>
-									  <input type="text" id="email" name="email" placeholder="Email" required>
-									  <br>
-									  <textarea id="feedback" name="feedback" rows="5" placeholder="Feedback" required></textarea>
-									  <br>
-									  <input type="submit" id="submit" value="Send" name="submit">
-									  <input type="reset" id="reset" value="Reset" name="reset">
-									</form>
-								  </div>
+									<div style="width: 50%;float: left" class="imagechange-3d image-hover hover">
+										<div class="imagechange-3d-inner">
+											<div class="imgchange-1">
+												<img src="images/ab.jpg" class="imgmain">
+											</div>
+											<div class="imgchange-2">
+												<img src="images/ab.jpg" class="imgmain">
+											</div>
+										</div>
+									</div>
+									
+									<div style="width: 49%; float: right">
+												</div>
+                                <!--<p>Information Technology is the use of computers to store, retrieve, transmit, and manipulate data, or information, often in the context of a business or other enterprise. IT is considered to be a subset of information and communications technology.</p>
+                                </br><a href="https://en.wikipedia.org/wiki/Information_technology">Wikipedia</a>
+                                <p>&nbsp;</p>
+                                <a href="https://techterms.com/definition/it">https://techterms.com/definition/it</a></br></br>
+                                <a href="https://www.techopedia.com/definition/626/information-technology-it">https://www.techopedia.com/definition/626/information-technology-it</a>-->
                             </div>
 
                             <p>&nbsp;</p>
@@ -150,29 +143,40 @@
                                 <h2 class="sidebar2">Contact</h2>
                                 <div class="contact-detail">
                                     <p class="green"><strong>Lorem Ipsum is simply dummy text</strong></p>
-                                    <p><strong>Adress :</strong> moradabad 244001</p>
-                                    <p><strong>E-mail :</strong> &nbsp;&nbsp;&nbsp;abc@gmail.com</p>
+                                    <p><strong>Adress :</strong> 
+                                    &nbsp;&nbsp;&nbsp; 
+                                    Moradabad-244001</p>
+                                    <p><strong>E-mail :</strong>&nbsp;&nbsp;&nbsp;abc@gmail.com</p>
                                     <p><strong>Phone :</strong> &nbsp;&nbsp;&nbsp;1234<br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;000-0000-0000</p>
+                                        </p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="footer">
                         <p>&copy; Copyright 2021. Designed by <a target="_blank" href="http://www.google.com">Trapti Gupta</a>
                         </p>
                         <ul>
                             <li style="border-left: medium none;"><a href="index.html"><span>Home</span></a></li>
-                            <li><a href="ccpp-new"><span>C /&nbsp;C++</span></a></li>
-                            <li><a href="java_new"><span>Java&nbsp;</span></a></li>
-                            <li><a href="index_webdesign"><span>Web Design</span></a></li>
+                            <li><a href="ccpp-new.html"><span>C /&nbsp;C++</span></a></li>
+                            <li><a href="java_new.html"><span>Java&nbsp;</span></a></li>
+                            <li><a href="index_webdesign.html"><span>Web Design</span></a></li>
                             <li><a href="map.html"><span>Map</span></a></li>
-                            <li><a href="resources-index"><span>Resources</span></a></li>
+                            <li><a href="resources-index.html"><span>Resources</span></a></li>
                             <li style="padding-right: 0px;"><a href="feedback.html"><span>FeedBack</span></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-		</div>
+            
+            <div style="float: right; margin-top: 20px;">
+				<br><br><br><br><br><br><br>
+            
+                
+              
+            </div>
+        </div>
+
     </body>
 </html>
